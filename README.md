@@ -1,10 +1,10 @@
 # 🌍 GWQ-Stack: Neuro-Symbolic Ensemble Framework for Global Water Quality Prediction
 
-⚡ Large-scale Environmental AI | Ensemble Learning | Explainable AI | Neuro-Symbolic ML
+ Large-scale Environmental AI | Ensemble Learning | Explainable AI | Neuro-Symbolic ML
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 GWQ-Stack is a scalable machine learning framework designed to predict the **Water Quality Index (WQI)** using large-scale environmental datasets. The project integrates ensemble learning with neural meta-learning to capture complex nonlinear relationships between hydrological parameters.
 
@@ -12,7 +12,7 @@ Traditional water quality assessment relies on laboratory testing and manual sam
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 GWQ-Stack implements a **two-level stacked generalization architecture**.
 
@@ -31,7 +31,7 @@ The meta-learner captures nonlinear relationships between base learner predictio
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 - Global Water Quality Dataset (1940–2023)
 - Total Samples: **2.82 Million**
@@ -51,7 +51,7 @@ The meta-learner captures nonlinear relationships between base learner predictio
 
 ---
 
-## ⚙️ Methodology
+##  Methodology
 
 ### Data Processing
 - Median imputation for missing values
@@ -70,7 +70,7 @@ The meta-learner captures nonlinear relationships between base learner predictio
 
 ---
 
-## 📈 Performance Results
+##  Performance Results
 
 | Metric | Score |
 |---------|------------|
@@ -78,11 +78,11 @@ The meta-learner captures nonlinear relationships between base learner predictio
 | RMSE | 0.15856 |
 | MAE | 0.05456 |
 
-✅ Achieved approximately **85% reduction in prediction error** compared to existing benchmark models.
+ Achieved approximately **85% reduction in prediction error** compared to existing benchmark models.
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 - Orthophosphate and Ammonia are strong indicators of water quality degradation.
 - Hybrid stacking improves robustness by combining bias reduction and variance reduction.
@@ -90,7 +90,7 @@ The meta-learner captures nonlinear relationships between base learner predictio
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Python
 - Scikit-learn
@@ -108,7 +108,7 @@ The meta-learner captures nonlinear relationships between base learner predictio
 
 ---
 
-## 🌱 Applications
+##  Applications
 
 - Environmental monitoring
 - Smart water resource management
@@ -118,16 +118,12 @@ The meta-learner captures nonlinear relationships between base learner predictio
 
 ---
 
-## 📌 Current Status
+##  Current Status
 
-📝 Research manuscript prepared for IEEE conference submission.
+ Research manuscript prepared for IEEE conference submission.
 
 ---
 
-## 🤝 Contributions
-
-Contributions and improvements are welcome.  
-Feel free to open issues or submit pull requests.
 
 ---
 
