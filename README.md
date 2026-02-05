@@ -1,155 +1,137 @@
-🌍 GWQ-Stack: Neuro-Symbolic Ensemble Framework for Global Water Quality Prediction
+# 🌍 GWQ-Stack: Neuro-Symbolic Ensemble Framework for Global Water Quality Prediction
 
-GWQ-Stack is a scalable machine learning framework designed to predict the Water Quality Index (WQI) using large-scale environmental datasets. The project integrates ensemble learning with neural meta-learning to capture complex nonlinear relationships between hydrological parameters.
+⚡ Large-scale Environmental AI | Ensemble Learning | Explainable AI | Neuro-Symbolic ML
 
-This work focuses on building a high-fidelity, explainable, and scalable AI solution for global environmental monitoring.
+---
 
-🚀 Overview
+## 🚀 Overview
 
-Traditional water quality assessment relies heavily on laboratory testing and manual sampling, which is expensive and time-consuming. GWQ-Stack provides a data-driven alternative by leveraging large-scale datasets and advanced ensemble learning techniques.
+GWQ-Stack is a scalable machine learning framework designed to predict the **Water Quality Index (WQI)** using large-scale environmental datasets. The project integrates ensemble learning with neural meta-learning to capture complex nonlinear relationships between hydrological parameters.
 
-The framework combines multiple gradient boosting models with a neural meta-learner to achieve near-perfect predictive accuracy while maintaining interpretability through Explainable AI.
+Traditional water quality assessment relies on laboratory testing and manual sampling, which is resource-intensive. GWQ-Stack provides a data-driven alternative for high-accuracy and scalable environmental monitoring.
 
-🧠 Architecture
+---
 
-GWQ-Stack implements a two-level stacked generalization architecture:
+## 🧠 Architecture
 
-🔹 Level 0 – Base Learners
+GWQ-Stack implements a **two-level stacked generalization architecture**.
 
-XGBoost
+### 🔹 Level 0 – Base Learners
+- XGBoost
+- CatBoost
+- LightGBM
+- Random Forest
 
-CatBoost
+These models capture diverse error patterns using boosting and bagging techniques.
 
-LightGBM
+### 🔹 Level 1 – Meta Learner
+- Multilayer Perceptron (MLP)
 
-Random Forest
+The meta-learner captures nonlinear relationships between base learner predictions and improves final output accuracy.
 
-These models capture diverse error patterns using both boosting and bagging strategies.
+---
 
-🔹 Level 1 – Meta Learner
+## 📊 Dataset
 
-Multilayer Perceptron (MLP)
+- Global Water Quality Dataset (1940–2023)
+- Total Samples: **2.82 Million**
 
-The MLP learns nonlinear relationships between base learner predictions and refines final output accuracy.
+### Features
+- Ammonia (NH₃)
+- Biochemical Oxygen Demand (BOD)
+- Dissolved Oxygen (DO)
+- Orthophosphate
+- Nitrate
+- Nitrogen
+- pH
+- Temperature
 
-📊 Dataset
+### Target Variable
+- Canadian Council of Ministers of the Environment Water Quality Index (CCME-WQI)
 
-Global Water Quality Dataset (1940–2023)
+---
 
-Total Samples: 2.82 Million
+## ⚙️ Methodology
 
-Features include:
+### Data Processing
+- Median imputation for missing values
+- Robust feature scaling
+- Exploratory Data Analysis (EDA)
+- Correlation analysis
 
-Ammonia (NH₃)
+### Model Training
+- 5-Fold Cross Validation
+- Out-of-Fold (OOF) prediction generation
+- Stacked ensemble learning
 
-Biochemical Oxygen Demand (BOD)
+### Explainability
+- SHAP-based feature attribution
+- Global and local interpretability analysis
 
-Dissolved Oxygen (DO)
+---
 
-Orthophosphate
+## 📈 Performance Results
 
-Nitrate
+| Metric | Score |
+|---------|------------|
+| R² Score | 0.99992 |
+| RMSE | 0.15856 |
+| MAE | 0.05456 |
 
-Nitrogen
+✅ Achieved approximately **85% reduction in prediction error** compared to existing benchmark models.
 
-pH
+---
 
-Temperature
+## 🔍 Key Insights
 
-Target Variable:
+- Orthophosphate and Ammonia are strong indicators of water quality degradation.
+- Hybrid stacking improves robustness by combining bias reduction and variance reduction.
+- Neural meta-learning effectively captures residual prediction errors.
 
-Canadian Council of Ministers of the Environment Water Quality Index (CCME-WQI)
+---
 
-⚙️ Methodology
-Data Processing
+## 🛠 Tech Stack
 
-Missing value handling using median imputation
+- Python
+- Scikit-learn
+- XGBoost
+- CatBoost
+- LightGBM
+- TensorFlow / PyTorch
+- SHAP
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
-Robust feature scaling
+---
 
-Exploratory data analysis and correlation analysis
+---
 
-Model Training
+## 🌱 Applications
 
-5-Fold Cross Validation
+- Environmental monitoring
+- Smart water resource management
+- Pollution prediction systems
+- Sustainability and policy planning
+- IoT-based water quality monitoring
 
-Out-of-Fold (OOF) prediction generation
+---
 
-Stacked ensemble learning
-
-Explainability
-
-SHAP-based feature attribution
-
-Global and local interpretability analysis
-
-📈 Performance Results
-Metric	Score
-R² Score	0.99992
-RMSE	0.15856
-MAE	0.05456
-
-The framework achieves approximately 85% reduction in prediction error compared to existing benchmark models.
-
-🔍 Key Insights
-
-Orthophosphate and Ammonia are strong indicators of water quality degradation.
-
-Hybrid stacking improves robustness by combining bias reduction and variance reduction techniques.
-
-Neural meta-learning effectively captures residual prediction errors.
-
-🛠 Tech Stack
-
-Python
-
-Scikit-learn
-
-XGBoost
-
-CatBoost
-
-LightGBM
-
-TensorFlow / PyTorch (MLP)
-
-SHAP
-
-Pandas / NumPy / Matplotlib / Seaborn
-
-📁 Project Structure
-GWQ-Stack/
-│
-├── data/
-├── notebooks/
-├── models/
-├── preprocessing/
-├── training/
-├── evaluation/
-├── explainability/
-├── utils/
-└── README.md
-
-🌱 Applications
-
-Environmental monitoring
-
-Smart water resource management
-
-Pollution prediction systems
-
-Policy and sustainability planning
-
-IoT-based water quality assessment platforms
-
-📌 Current Status
+## 📌 Current Status
 
 📝 Research manuscript prepared for IEEE conference submission.
 
-🤝 Contributions
+---
 
-Contributions, improvements, and suggestions are welcome. Feel free to open issues or submit pull requests.
+## 🤝 Contributions
 
-📜 License
+Contributions and improvements are welcome.  
+Feel free to open issues or submit pull requests.
 
-This project is released under the MIT License.
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
