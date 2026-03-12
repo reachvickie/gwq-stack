@@ -1,4 +1,4 @@
-# 🌍 GWQ-Stack: Neuro-Symbolic Ensemble Framework for Global Water Quality Prediction
+#  GWQ-Stack: Neuro-Symbolic Ensemble Framework for Global Water Quality Prediction
 
  Large-scale Environmental AI | Ensemble Learning | Explainable AI | Neuro-Symbolic ML
 
@@ -115,12 +115,6 @@ The meta-learner captures nonlinear relationships between base learner predictio
 - Pollution prediction systems
 - Sustainability and policy planning
 - IoT-based water quality monitoring
-
----
-
-##  Current Status
-
- Research manuscript prepared for IEEE conference submission.
 
 ---
 
