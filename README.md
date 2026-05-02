@@ -16,12 +16,8 @@
 - [Installation](#installation)
 - [Dataset](#dataset)
 - [Quickstart — Reproduce Main Results](#quickstart--reproduce-main-results)
-- [Quickstart — Run Inference on New Data](#quickstart--run-inference-on-new-data)
 - [Fault Tolerance Experiment](#fault-tolerance-experiment)
 - [Architecture](#architecture)
-- [Three-Tier Cascade Imputation](#three-tier-cascade-imputation)
-- [Figures and Plots](#figures-and-plots)
-- [Citation](#citation)
 - [License](#license)
 
 ---
