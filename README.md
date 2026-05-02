@@ -130,10 +130,15 @@ FILEPATH = "/path/to/your/Combined_dataset.csv"
 
 **Step 1 — Set your dataset path**
 
-Open `gwq.py` and update line 12:
+Open `gwq.py` and update line 12 and 153:
 
 ```python
 FILEPATH = "/path/to/Combined_dataset.csv"
+.
+.
+.
+joblib.dump(final_pipeline, "/path/to/model/gwq.pkl")
+
 ```
 
 **Step 2 — Run the full training pipeline**
@@ -149,9 +154,7 @@ This will:
 4. Train the MLP meta-learner (64→32) on out-of-fold predictions
 5. Evaluate on the temporal holdout (post-2015)
 6. Print R², RMSE, MAE
-7. Save the serialised pipeline to `model/gwq_final_pipeline.pkl`
-8. Generate all paper figures to `plots/`
-
+7. Save the serialised pipeline to `model/gwq.pkl`
 **Expected output (temporal holdout):**
 
 ```
