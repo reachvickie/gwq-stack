@@ -43,9 +43,9 @@ gwq-stack/
 ├── experiment.py           # Fault tolerance experiment (k=1,2,3 sensor dropout)
 │
 ├── model/
-│   └── gwq_final_pipeline.pkl   # Serialised pipeline (LabelEncoders + base models + meta-learner)
+│   └── gwq_final_pipeline.pkl   # Serialised pipeline 
 │
-├── plots/                  # All paper figures (300 DPI PNG)
+├── plots/                 
 │   ├── Fig1_Loss_Curves.png
 │   ├── Fig2_SHAP_Importance.png
 │   ├── Fig3_Actual_vs_Predicted.png
