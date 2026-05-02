@@ -155,6 +155,8 @@ This will:
 5. Evaluate on the temporal holdout (post-2015)
 6. Print R², RMSE, MAE
 7. Save the serialised pipeline to `model/gwq.pkl`
+
+   
 **Expected output (temporal holdout):**
 
 ```
@@ -164,7 +166,7 @@ FINAL RESULTS (Temporal Holdout, post-2015)
 R²   : 0.99980
 RMSE : 0.15770
 MAE  : 0.05380
-Pipeline saved → model/gwq_final_pipeline.pkl
+Pipeline saved → model/gwq.pkl
 ```
 
 **Runtime:** approximately 30 -45 mins on a T4 GPU (Google Colab). 
@@ -194,7 +196,6 @@ This will:
 - At 10%, 30%, and 50% dropout rates
 - Comparing No Imputation vs Tier-3 (global median) vs Tier-2 (temporal forward-fill)
 - Print the full results table matching Table 3 in the paper
-- Save three fault tolerance figures to `plots/`
 
 **Expected output (excerpt):**
 
